@@ -32,7 +32,7 @@ class Home extends PureComponent {
             <div>
                 <table className="table">
                     <thead>
-                        <tr>
+                        <tr className='bg-danger'>
                             <th scope="col">#</th>
                             <th scope="col">Name</th>
                             <th scope="col">email</th>
@@ -50,8 +50,8 @@ class Home extends PureComponent {
                         }
                     </tbody>
                 </table>
-                <div className='d-flex justify-content-between'>
-                    <button className='btn btn-primary' onClick={() => {
+                <div className='d-flex justify-content-center'>
+                    <button className='btn btn-success m-3 px-4' onClick={() => {
                         if (this.data.length === this.state.tableData.length) {
                             return;
                         }
@@ -61,7 +61,7 @@ class Home extends PureComponent {
                         })
                     }}>Next</button>
 
-                    <button className='btn btn-primary' onClick={() => {
+                    <button className='btn btn-success m-3' onClick={() => {
                         if (this.state.tableData.length === 1) {
                             return;
                         }

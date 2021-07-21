@@ -34,7 +34,7 @@ class Signup extends PureComponent {
                                     <input type="password" className="form-control" id="inputPassword4" />
                                 </div>
                                 <div className="col-12">
-                                    <button type="submit" className="btn btn-primary" onClick={ this.handleSubmit }>Sign up</button>
+                                    <button type="submit" className="btn btn-success" onClick={ this.handleSubmit }>Sign up</button>
                                 </div>
                             </form>
 

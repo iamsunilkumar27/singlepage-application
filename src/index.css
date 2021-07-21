@@ -16,4 +16,5 @@ code {
 .active-navbar-link {
   color: red !important;
   background-color: powderblue;
+  border-radius: 1rem;
 }

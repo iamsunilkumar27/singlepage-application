@@ -1,5 +1,20 @@
 import './Signin.css';
-function Signin() {
+import { PureComponent } from "react";
+
+class Signin extends PureComponent {
+    constructor(props) {
+        super(props);
+        this.state =  {
+
+        }
+        this.handleSubmit = this.handleSubmit.bind(this);
+    }
+    handleSubmit(event) {
+        console.log('form submitted.......');
+        event.preventDefault();
+    }
+
+    render() {
     return (
         <div className='signin h-100'>
             <div className=''>
@@ -15,7 +30,7 @@ function Signin() {
                                 <input type="password" className="form-control" id="inputPassword4" />
                             </div>
                             <div className="col-12">
-                                <button type="submit" className="btn btn-primary">Sign in</button>
+                                <button type="submit" className="btn btn-success" onClick={ this.handleSubmit }>Sign in</button>
                             </div>
                         </form>
 
@@ -24,5 +39,6 @@ function Signin() {
             </div>
         </div>
     );
+    }
 }
 export default Signin;
